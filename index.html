@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemon</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="up-head">
+      <h1 class="heading">GeeksterMon</h1>
+      <select name="" id="select-opt"></select>
+      <button onclick="filter()">Filter by Type</button
+      ><button onclick="reset()">Reset</button>
+      <div id="search">
+        <input
+          onkeyup="searchPokemon()"
+          type="text"
+          name=""
+          id="search-val"
+          placeholder="Enter any Pokemon Name"
+        />
+      </div>
+    </div>
+    <div id="main"></div>
+    <script src="main.js"></script>
+  </body>
+</html>
